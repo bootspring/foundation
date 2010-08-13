@@ -5,7 +5,7 @@ gem 'devise', :git => 'git://github.com/plataformatec/devise.git'
 gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'capistrano'
 gem 'capistrano-ext'
-gem 'rails-footnotes'
+#gem 'rails-footnotes'
 gem 'memcache-client'
 gem 'mysql2'
 
