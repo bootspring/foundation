@@ -95,9 +95,12 @@ pre, code, kbd, samp { font-family: monospace, sans-serif; }
 /* #444 looks better than black: twitter.com/H_FJ/statuses/11800719859 */ 
 body, select, input, textarea { color:#444; }
 
-/* Headers (h1,h2,etc) have no default font-size or margin,
-   you'll want to define those yourself. */ 
- 
+h1              { font-size: 2em; }
+h2              { font-size: 1.5em; }
+h3              { font-size: 1.17em; }
+h5              { font-size: .83em; }
+h6              { font-size: .75em; }
+
 /* www.aestheticallyloyal.com/public/optimize-legibility/ */ 
 h1,h2,h3,h4,h5,h6 { font-weight: bold; text-rendering: optimizeLegibility; }
 

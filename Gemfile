@@ -5,6 +5,7 @@ gem 'devise', :git => 'git://github.com/plataformatec/devise.git'
 gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'capistrano'
 gem 'capistrano-ext'
+gem 'rails-footnotes'
 
 group :test do
   gem 'factory_girl_rails'

@@ -105,6 +105,7 @@ GEM
       activesupport (= 3.0.0.rc)
       bundler (>= 1.0.0.rc.1)
       railties (= 3.0.0.rc)
+    rails-footnotes (3.6.7)
     railties (3.0.0.rc)
       actionpack (= 3.0.0.rc)
       activesupport (= 3.0.0.rc)
@@ -155,6 +156,7 @@ DEPENDENCIES
   less
   mocha
   rails
+  rails-footnotes
   rspec-rails (>= 2.0.0.beta.19)
   sqlite3-ruby
   steak (= 0.4.0.beta.1)

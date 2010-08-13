@@ -15,7 +15,7 @@ Features
     - jQuery via Google's CDN
     - HTML5 boilerplate
  * Testing
-    - RSpec + Steak for feature testing (Cucumber is too complex)
+    - RSpec + Steak for feature testing (Cucumber is too complex IMO)
     - Capybara for full-stack acceptance testing
     - factory_girl for data factories
     - Mocha for general mocking

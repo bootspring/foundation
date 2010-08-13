@@ -15,7 +15,6 @@
 <body>
   <div id="container">
     <header>
-
     </header>
     
     <div id="main">
@@ -25,12 +24,11 @@
     </div>
     
     <footer>
-
     </footer>
   </div>
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-  <%= javascript_include_tag [:rails, :application], :cache => true, :concat => true %>
+  <%= javascript_include_tag 'rails', 'application', :cache => true, :concat => true %>
 
   <script>
    var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']];
