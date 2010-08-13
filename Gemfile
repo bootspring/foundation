@@ -7,6 +7,7 @@ gem 'capistrano'
 gem 'capistrano-ext'
 gem 'rails-footnotes'
 gem 'memcache-client'
+gem 'mysql2'
 
 group :test do
   gem 'factory_girl_rails'

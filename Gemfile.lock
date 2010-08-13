@@ -84,6 +84,7 @@ GEM
     mocha (0.9.8)
       rake
     mutter (0.5.3)
+    mysql2 (0.1.9)
     net-scp (1.0.2)
       net-ssh (>= 1.99.1)
     net-sftp (2.0.4)
@@ -157,6 +158,7 @@ DEPENDENCIES
   less
   memcache-client
   mocha
+  mysql2
   rails
   rails-footnotes
   rspec-rails (>= 2.0.0.beta.19)

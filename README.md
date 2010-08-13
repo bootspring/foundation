@@ -16,6 +16,7 @@ Features
     - HTML5 boilerplate
     - Blueprint CSS framework
     - memcache-client for caching
+    - mysql2 database adapter
  * Testing
     - RSpec + Steak for feature testing (Cucumber is too complex IMO)
     - Capybara for full-stack acceptance testing
@@ -50,6 +51,8 @@ Installation
 
     gem install rails --pre
     bundle install
+    rake db:create:all
+    rake db:migrate
 
 
 Thanks
