@@ -15,6 +15,7 @@ Features
     - jQuery via Google's CDN
     - HTML5 boilerplate
     - Blueprint CSS framework
+    - memcache-client for caching
  * Testing
     - RSpec + Steak for feature testing (Cucumber is too complex IMO)
     - Capybara for full-stack acceptance testing
