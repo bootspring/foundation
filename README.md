@@ -10,6 +10,8 @@ Features
  * Functionality:
     - devise for authentication
     - admin_data for auto-scaffolding (TODO)
+    - jQuery via Google's CDN
+    - HTML5 boilerplate
  * Testing
     - RSpec + Steak for feature testing (Cucumber is too complex)
     - Capybara for full-stack acceptance testing
@@ -19,8 +21,8 @@ Features
  * Utilities
     - LessCSS for CSS maintenance
     - smurf for JS/CSS minification
-    - famfamfam icon set
     - capistrano with multistage support
+    - Rails Footnotes for profiling/debugging
 
 
 Requirements
@@ -50,8 +52,6 @@ Thanks
 ================
 
 Foundation is code developed for my company, [Bootspring](http://bootspring.com), to help us bootstrap clients quickly.
-
-Mark James for his great [Silk icon set](http://www.famfamfam.com/lab/icons/silk/).
 
 
 Author

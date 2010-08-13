@@ -1,14 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
+  <!-- http://github.com/paulirish/html5-boilerplate -->
   <title>Foundation</title>
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
   <%= stylesheet_link_tag :all, :cache => true, :concat => true %>
-  <%= javascript_include_tag :defaults, :cache => true, :concat => true %>
+  <script src="javascripts/modernizr-1.5.min.js"></script>
   <%= csrf_meta_tag %>
 </head>
 <body>
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
-  <%= yield %>
+  <div id="container">
+    <header>
+
+    </header>
+    
+    <div id="main">
+	  <p class="notice"><%= notice %></p>
+	  <p class="alert"><%= alert %></p>
+	  <%= yield %>
+    </div>
+    
+    <footer>
+
+    </footer>
+  </div>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+  <%= javascript_include_tag [:rails, :application], :cache => true, :concat => true %>
+
+  <script>
+   var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']];
+   (function(d, t) {
+    var g = d.createElement(t),
+        s = d.getElementsByTagName(t)[0];
+    g.async = true;
+    g.src = '//www.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g, s);
+   })(document, 'script');
+  </script>
+
 </body>
 </html>
