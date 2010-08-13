@@ -3,6 +3,8 @@ Foundation
 
 Foundation is my take on a solid starting point for Rails3 applications being built today.  It is also an excellent science fiction series by Isaac Asimov.
 
+![Foundation](http://www.nowakfilms.com/joomla15/images/stories/asimov_isaac_foundation_av.jpg)
+
 Features
 ===============
 
