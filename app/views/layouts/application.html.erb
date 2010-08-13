@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Foundation</title>
+  <%= stylesheet_link_tag :all, :cache => true, :concat => true %>
+  <%= javascript_include_tag :defaults, :cache => true, :concat => true %>
+  <%= csrf_meta_tag %>
+</head>
+<body>
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+  <%= yield %>
+</body>
+</html>
