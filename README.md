@@ -1,15 +1,17 @@
-= Foundation
+Foundation
+===============
 
 Foundation is my take on a solid starting point for Rails3 applications being built today.  It is also an excellent science fiction series by Isaac Asimov.
 
-= Features
+Features
+===============
 
  * Core: Rails 3, Ruby 1.9.2, bundler 1.0.0
  * Functionality:
     - devise for authentication
     - admin_data for auto-scaffolding (TODO)
  * Testing
-    - Steak for features (Cucumber is too complex IMO)
+    - RSpec + Steak for feature testing (Cucumber is too complex)
     - Capybara for full-stack acceptance testing
     - factory_girl for data factories
     - Mocha for general mocking
@@ -20,20 +22,39 @@ Foundation is my take on a solid starting point for Rails3 applications being bu
     - famfamfam icon set
     - capistrano with multistage support
 
-= Requirements
 
-== RVM
+Requirements
+===============
+
+RVM
+-----------------
 
     gem install rvm
     rvm-install
     rvm reload
 
-== Ruby 1.9.2
+Ruby 1.9.2
+-----------------
 
     rvm install 1.9.2
-    rvm use 1.9.2@foundation
+    rvm use 1.9.2@foundation --create
 
-= Installation
+Installation
+-----------------
 
     gem install rails --pre
     bundle install
+
+
+Thanks
+================
+
+Foundation is code developed for my company, [Bootspring](http://bootspring.com), to help us bootstrap clients quickly.
+
+Mark James for his great [Silk icon set](http://www.famfamfam.com/lab/icons/silk/).
+
+
+Author
+==============
+
+Mike Perham, mperham@gmail.com, [mikeperham.com](http://mikeperham.com), [@mperham](http://twitter.com/mperham)
