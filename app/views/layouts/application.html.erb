@@ -8,7 +8,7 @@
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
-  <%= stylesheet_link_tag :all, :cache => true, :concat => true %>
+  <%= stylesheet_link_tag :defaults %>
   <script src="javascripts/modernizr-1.5.min.js"></script>
   <%= csrf_meta_tag %>
 </head>
@@ -18,9 +18,13 @@
     </header>
     
     <div id="main">
-	  <p class="notice"><%= notice %></p>
-	  <p class="alert"><%= alert %></p>
-	  <%= yield %>
+      <% if notice %>
+  	    <p class="notice"><%= notice %></p>
+	    <% end -%>
+      <% if alert %>
+  	  <p class="alert"><%= alert %></p>
+	    <% end -%>
+  	  <%= yield %>
     </div>
     
     <footer>
@@ -28,7 +32,7 @@
   </div>
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-  <%= javascript_include_tag 'rails', 'application', :cache => true, :concat => true %>
+  <%= javascript_include_tag :defaults, :cache => true, :concat => true %>
 
   <script>
    var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']];

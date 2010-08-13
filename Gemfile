@@ -6,6 +6,7 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'capistrano'
 gem 'capistrano-ext'
 gem 'rails-footnotes'
+gem 'memcache-client'
 
 group :test do
   gem 'factory_girl_rails'

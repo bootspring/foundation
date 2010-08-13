@@ -14,6 +14,7 @@ Features
     - admin_data for auto-scaffolding (TODO)
     - jQuery via Google's CDN
     - HTML5 boilerplate
+    - Blueprint CSS framework
  * Testing
     - RSpec + Steak for feature testing (Cucumber is too complex IMO)
     - Capybara for full-stack acceptance testing

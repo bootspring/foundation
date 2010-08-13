@@ -79,6 +79,7 @@ GEM
       activesupport (>= 2.3.6)
       mime-types
       treetop (>= 1.4.5)
+    memcache-client (1.8.5)
     mime-types (1.16)
     mocha (0.9.8)
       rake
@@ -154,6 +155,7 @@ DEPENDENCIES
   factory_girl_rails
   launchy
   less
+  memcache-client
   mocha
   rails
   rails-footnotes
