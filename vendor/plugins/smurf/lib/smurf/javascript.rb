@@ -47,8 +47,13 @@ module Smurf
 
     def initialize(content)
       @input = StringIO.new(content)
-      @output = StringIO.new
-      jsmin
+      begin
+        @output = StringIO.new
+        jsmin
+      rescue RuntimeError => ex
+        puts "Unable to minify Javascript: #{ex.message}"
+        @output = StringIO.new(content)
+      end
     end
 
     def minified
