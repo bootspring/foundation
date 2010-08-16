@@ -1,4 +1,4 @@
-source 'http://rubygems.org'
+source :rubygems
 
 gem 'rails'
 gem 'devise', :git => 'git://github.com/plataformatec/devise.git'
@@ -8,6 +8,9 @@ gem 'capistrano-ext'
 #gem 'rails-footnotes'
 gem 'memcache-client'
 gem 'mysql2'
+
+gem 'admin_data', :git => 'git://github.com/neerajdotname/admin_data.git', :branch => 'rails3_gem'
+gem 'will_paginate', :git => 'git://github.com/mislav/will_paginate.git', :branch => 'rails3'
 
 group :test do
   gem 'factory_girl_rails'

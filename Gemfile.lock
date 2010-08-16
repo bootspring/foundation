@@ -1,4 +1,19 @@
 GIT
+  remote: git://github.com/mislav/will_paginate.git
+  revision: 3615938
+  branch: rails3
+  specs:
+    will_paginate (3.0.pre2)
+
+GIT
+  remote: git://github.com/neerajdotname/admin_data.git
+  revision: 942cebe
+  branch: rails3_gem
+  specs:
+    admin_data (1.0.0)
+      will_paginate
+
+GIT
   remote: git://github.com/plataformatec/devise.git
   revision: 701bbf2
   specs:
@@ -148,6 +163,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  admin_data!
   capistrano
   capistrano-ext
   capybara
@@ -163,3 +179,4 @@ DEPENDENCIES
   sqlite3-ruby
   steak (= 0.4.0.beta.1)
   vcr
+  will_paginate!
