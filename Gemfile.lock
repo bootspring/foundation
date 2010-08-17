@@ -1,4 +1,12 @@
 GIT
+  remote: git://github.com/brynary/rack-bug.git
+  revision: 6652bbb
+  branch: rails3
+  specs:
+    rack-bug (0.3.0)
+      rack (>= 1.0)
+
+GIT
   remote: git://github.com/mislav/will_paginate.git
   revision: 3615938
   branch: rails3
@@ -174,6 +182,7 @@ DEPENDENCIES
   memcache-client
   mocha
   mysql2
+  rack-bug!
   rails
   rspec-rails (>= 2.0.0.beta.19)
   sqlite3-ruby

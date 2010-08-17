@@ -26,8 +26,8 @@ Features
  * Utilities
     - LessCSS for CSS maintenance
     - smurf for JS/CSS minification
-    - capistrano with multistage support
-    - Rails Footnotes for profiling/debugging
+    - capistrano with multistage support for easy deployment
+    - rack-bug for profiling/debugging
 
 
 Requirements
@@ -53,6 +53,11 @@ Installation
     bundle install
     rake db:create:all
     rake db:migrate
+
+Configuration
+-----------------
+
+You will need to edit config/database.yml, config/deploy* and several values in config/environment/*.rb.
 
 
 Thanks
