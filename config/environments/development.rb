@@ -24,4 +24,7 @@ Foundation::Application.configure do
   
   config.middleware.use Rack::Bug,
     :secret_key => "password"
+
+  config.cache_store = :dalli_store, 'localhost:11211'
+
 end

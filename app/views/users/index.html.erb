@@ -2,3 +2,9 @@
 <p>
 	Lebron tweeted that he remembers everyone who's done him wrong. Or more specifically, everyone who told him to grow an Abe Lincoln beard.
 </p>
+<table>
+  <tr><th>ID</th><th>Email</th></tr>
+  <% @users.each do |u| %>
+	<tr><td><%= u.id %></td><td><%= u.email %></td>
+  <% end -%>
+</table>

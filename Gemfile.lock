@@ -15,11 +15,11 @@ GIT
 
 GIT
   remote: git://github.com/neerajdotname/admin_data.git
-  revision: 942cebe
+  revision: d3a0d44
   branch: rails3_gem
   specs:
-    admin_data (1.0.0)
-      will_paginate
+    admin_data (1.0.8)
+      will_paginate (>= 3.0.pre2)
 
 GIT
   remote: git://github.com/plataformatec/devise.git
@@ -28,6 +28,11 @@ GIT
     devise (1.2.0)
       bcrypt-ruby (~> 2.1.2)
       warden (~> 0.10.7)
+
+PATH
+  remote: /Users/mike/git/dalli
+  specs:
+    dalli (0.1.0)
 
 GEM
   remote: http://rubygems.org/
@@ -102,7 +107,6 @@ GEM
       activesupport (>= 2.3.6)
       mime-types
       treetop (>= 1.4.5)
-    memcache-client (1.8.5)
     mime-types (1.16)
     mocha (0.9.8)
       rake
@@ -175,11 +179,11 @@ DEPENDENCIES
   capistrano
   capistrano-ext
   capybara
+  dalli!
   devise!
   factory_girl_rails
   launchy
   less
-  memcache-client
   mocha
   mysql2
   rack-bug!
