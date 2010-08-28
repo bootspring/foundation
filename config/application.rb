@@ -6,6 +6,36 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(:default, Rails.env) if defined?(Bundler)
 
+
+module ActiveSupport
+  module Cache
+    def self.lookup_store(*store_option)
+      store, *parameters = *Array.wrap(store_option).flatten
+
+      case store
+      when Symbol
+        store_class_name = store.to_s.camelize
+        store_class = nil
+        begin
+          store_class = ActiveSupport::Cache.const_get(store_class_name)
+        rescue NameError
+          begin
+            require "active_support/cache/#{store.to_s}"
+            store_class = ActiveSupport::Cache.const_get(store_class_name)
+          rescue LoadError
+            raise "Could not find cache store adapter for #{store.to_s} (#{$!})"
+          end
+        end
+        store_class.new(*parameters)
+      when nil
+        ActiveSupport::Cache::MemoryStore.new
+      else
+        store
+      end
+    end
+  end
+end
+
 module Foundation
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.

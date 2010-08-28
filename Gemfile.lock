@@ -13,27 +13,6 @@ GIT
   specs:
     will_paginate (3.0.pre2)
 
-GIT
-  remote: git://github.com/neerajdotname/admin_data.git
-  revision: d3a0d44
-  branch: rails3_gem
-  specs:
-    admin_data (1.0.8)
-      will_paginate (>= 3.0.pre2)
-
-GIT
-  remote: git://github.com/plataformatec/devise.git
-  revision: 701bbf2
-  specs:
-    devise (1.2.0)
-      bcrypt-ruby (~> 2.1.2)
-      warden (~> 0.10.7)
-
-PATH
-  remote: /Users/mike/git/dalli
-  specs:
-    dalli (0.1.0)
-
 GEM
   remote: http://rubygems.org/
   specs:
@@ -64,6 +43,8 @@ GEM
       activemodel (= 3.0.0.rc)
       activesupport (= 3.0.0.rc)
     activesupport (3.0.0.rc)
+    admin_data (1.0.9)
+      will_paginate (>= 3.0.pre2)
     arel (0.4.0)
       activesupport (>= 3.0.0.beta)
     bcrypt-ruby (2.1.2)
@@ -84,7 +65,11 @@ GEM
       rack-test (>= 0.5.4)
       selenium-webdriver (>= 0.0.3)
     configuration (1.1.0)
-    culerity (0.2.10)
+    culerity (0.2.12)
+    dalli (0.9.1)
+    devise (1.1.2)
+      bcrypt-ruby (~> 2.1.2)
+      warden (~> 0.10.7)
     diff-lcs (1.1.2)
     erubis (2.6.6)
       abstract (>= 1.0.0)
@@ -140,19 +125,18 @@ GEM
       rake (>= 0.8.3)
       thor (~> 0.14.0)
     rake (0.8.7)
-    rspec (2.0.0.beta.19)
-      rspec-core (= 2.0.0.beta.19)
-      rspec-expectations (= 2.0.0.beta.19)
-      rspec-mocks (= 2.0.0.beta.19)
-    rspec-core (2.0.0.beta.19)
-    rspec-expectations (2.0.0.beta.19)
+    rspec (2.0.0.beta.20)
+      rspec-core (= 2.0.0.beta.20)
+      rspec-expectations (= 2.0.0.beta.20)
+      rspec-mocks (= 2.0.0.beta.20)
+    rspec-core (2.0.0.beta.20)
+    rspec-expectations (2.0.0.beta.20)
       diff-lcs (>= 1.1.2)
-    rspec-mocks (2.0.0.beta.19)
-    rspec-rails (2.0.0.beta.19)
-      rspec (= 2.0.0.beta.19)
-      webrat (>= 0.7.2.beta.1)
+    rspec-mocks (2.0.0.beta.20)
+    rspec-rails (2.0.0.beta.20)
+      rspec (= 2.0.0.beta.20)
     rubyzip (0.9.4)
-    selenium-webdriver (0.0.27)
+    selenium-webdriver (0.0.28)
       ffi (>= 0.6.1)
       json_pure
       rubyzip
@@ -163,24 +147,20 @@ GEM
     treetop (1.4.8)
       polyglot (>= 0.3.1)
     tzinfo (0.3.22)
-    vcr (1.0.3)
+    vcr (1.1.1)
     warden (0.10.7)
       rack (>= 1.0.0)
-    webrat (0.7.2.beta.1)
-      nokogiri (>= 1.2.0)
-      rack (>= 1.0)
-      rack-test (>= 0.5.3)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  admin_data!
+  admin_data
   capistrano
   capistrano-ext
   capybara
-  dalli!
-  devise!
+  dalli
+  devise
   factory_girl_rails
   launchy
   less
