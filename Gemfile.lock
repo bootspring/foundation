@@ -13,6 +13,12 @@ GIT
   specs:
     will_paginate (3.0.pre2)
 
+GIT
+  remote: git://github.com/mperham/dalli.git
+  revision: d8c0c1c
+  specs:
+    dalli (0.9.1)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -66,7 +72,6 @@ GEM
       selenium-webdriver (>= 0.0.3)
     configuration (1.1.0)
     culerity (0.2.12)
-    dalli (0.9.1)
     devise (1.1.2)
       bcrypt-ruby (~> 2.1.2)
       warden (~> 0.10.7)
@@ -159,7 +164,7 @@ DEPENDENCIES
   capistrano
   capistrano-ext
   capybara
-  dalli
+  dalli!
   devise
   factory_girl_rails
   launchy
