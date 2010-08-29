@@ -1,6 +1,6 @@
 Foundation::Application.configure do
   # Settings specified here will take precedence over those in config/environment.rb
-  raise ArgumentError, 'Please update the pepper in config/initializers/devise.rb'
+#  raise ArgumentError, 'Please update the pepper in config/initializers/devise.rb'
 
   # The production environment is meant for finished, "live" apps.
   # Code is not reloaded between requests
@@ -27,7 +27,7 @@ Foundation::Application.configure do
   # config.logger = SyslogLogger.new
 
   # Use a different cache store in production
-  raise ArgumentError, 'Please update the memcached config in config/environments/production.rb'
+#  raise ArgumentError, 'Please update the memcached config in config/environments/production.rb'
   config.cache_store = :dalli_store, 'localhost:11211'
 
   # Disable Rails's static asset server
@@ -47,6 +47,6 @@ Foundation::Application.configure do
   # the I18n.default_locale when a translation can not be found)
   config.i18n.fallbacks = true
   
-  raise ArgumentError, 'Please update the default url in config/environments/production.rb'
+#  raise ArgumentError, 'Please update the default url in config/environments/production.rb'
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
 end
