@@ -28,7 +28,7 @@ Foundation::Application.configure do
 
   # Use a different cache store in production
 #  raise ArgumentError, 'Please update the memcached config in config/environments/production.rb'
-  config.cache_store = :dalli_store, 'localhost:11211'
+  config.cache_store = :dalli_store
 
   # Disable Rails's static asset server
   # In production, Apache or nginx will already do this
