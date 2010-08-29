@@ -5,7 +5,6 @@ gem 'devise'
 gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'capistrano'
 gem 'capistrano-ext'
-#gem 'memcache-client'
 gem 'mysql2'
 
 gem 'admin_data'
@@ -13,7 +12,7 @@ gem 'will_paginate', :git => 'git://github.com/mislav/will_paginate.git', :branc
 
 gem 'rack-bug', :require => 'rack/bug', :git => 'git://github.com/brynary/rack-bug.git', :branch => 'rails3'
 
-gem 'dalli'
+gem 'dalli', :git => 'git://github.com/mperham/dalli.git'
 
 group :test do
   gem 'factory_girl_rails'
