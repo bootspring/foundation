@@ -2,6 +2,11 @@
 <p>
   It's currently <%= @now %>.
 </p>
+<p>
+  <pre>
+    <%= @stats.inspect %>
+  </pre>
+</p>
 <table>
   <tr><th>ID</th><th>Email</th></tr>
   <% @users.each do |u| %>
