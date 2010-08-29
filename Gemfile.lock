@@ -15,7 +15,7 @@ GIT
 
 GIT
   remote: git://github.com/mperham/dalli.git
-  revision: 0760197
+  revision: 785a5aa
   specs:
     dalli (0.9.1)
 
