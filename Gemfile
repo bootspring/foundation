@@ -6,6 +6,7 @@ gem 'capistrano'
 gem 'capistrano-ext'
 gem 'mysql2'
 gem 'dalli'
+gem 'thin'
 
 gem 'admin_data'
 gem 'will_paginate', :git => 'git://github.com/mislav/will_paginate.git', :branch => 'rails3'

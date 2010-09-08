@@ -11,11 +11,11 @@ Features
  * Core: Rails 3, Ruby 1.9.2, bundler 1.0.0
  * Functionality:
     - devise for authentication
-    - admin_data for auto-scaffolding (TODO)
+    - admin_data for auto-scaffolding
     - jQuery via Google's CDN
     - HTML5 boilerplate
     - Blueprint CSS framework
-    - memcache-client for caching
+    - dalli for caching
     - mysql2 database adapter
  * Testing
     - RSpec + Steak for feature testing (Cucumber is too complex IMO)
@@ -49,7 +49,7 @@ Ruby 1.9.2
 Installation
 -----------------
 
-    gem install rails --pre
+    gem install bundler
     bundle install
     rake db:create:all
     rake db:migrate
@@ -63,7 +63,7 @@ You will need to edit config/database.yml, config/deploy* and several values in 
 Thanks
 ================
 
-Foundation is code developed for my company, [Bootspring](http://bootspring.com), to help us bootstrap clients quickly.
+Foundation is code developed for my company, [Bootspring](http://bootspring.com), to help us bootstrap clients quickly.  Please [contact us](mailto:info@bootspring.com) if we can help you with your Ruby development or infrastructure problems.
 
 
 Author
