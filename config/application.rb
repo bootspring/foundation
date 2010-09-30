@@ -46,3 +46,7 @@ module Foundation
     config.active_support.deprecation = :stderr
   end
 end
+
+# ActiveSupport::Notifications.subscribe(/fragment/) do |event|
+#   Rails.logger.warn event.inspect
+# end

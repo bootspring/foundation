@@ -1,6 +1,12 @@
 <h1>Hello World</h1>
+
 <p>
   It's currently <%= @now %>.
+</p>
+
+<% cache 'test' do %>
+<p>
+  It was <%= @now %>.
 </p>
 <p>
   <%= @stats.inspect %>
@@ -11,3 +17,4 @@
 	<tr><td><%= u.id %></td><td><%= u.email %></td>
   <% end -%>
 </table>
+<% end -%>
