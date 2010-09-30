@@ -82,6 +82,7 @@ GEM
     ffi (0.6.3)
       rake (>= 0.8.7)
     highline (1.6.1)
+    home_run (0.9.3)
     i18n (0.4.1)
     json_pure (1.4.6)
     launchy (0.3.7)
@@ -167,6 +168,7 @@ DEPENDENCIES
   dalli
   devise
   factory_girl_rails
+  home_run
   launchy
   less
   mocha
