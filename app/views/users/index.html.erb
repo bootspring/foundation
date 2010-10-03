@@ -1,20 +1,23 @@
-<h1>Hello World</h1>
+<h1>Listing users</h1>
 
-<p>
-  It's currently <%= @now %>.
-</p>
-
-<% cache 'test' do %>
-<p>
-  It was <%= @now %>.
-</p>
-<p>
-  <%= @stats.inspect %>
-</p>
 <table>
-  <tr><th>ID</th><th>Email</th></tr>
-  <% @users.each do |u| %>
-	<tr><td><%= u.id %></td><td><%= u.email %></td>
-  <% end -%>
+  <tr>
+    <th>Email</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @users.each do |user| %>
+  <tr>
+    <td><%= user.email %></td>
+    <td><%= link_to 'Show', user %></td>
+    <td><%= link_to 'Edit', edit_user_path(user) %></td>
+    <td><%= link_to 'Destroy', user, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
 </table>
-<% end -%>
+
+<br />
+
+<%= link_to 'New Account', new_user_path %>
