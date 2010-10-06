@@ -4,6 +4,11 @@ class UsersController < ApplicationController
   def index
     @users = User.all
 
+    @session_time = session[:foo] ||= Time.now
+    @cache_time = Rails.cache.fetch('current_time', :expires_in => 1.day) do
+      Time.now
+    end
+
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @users }
@@ -14,7 +19,7 @@ class UsersController < ApplicationController
   # GET /users/1.xml
   def show
     @user = User.find(params[:id])
-    Juggernaut.publish("/user", @user)
+
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @user }
