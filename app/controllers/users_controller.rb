@@ -4,6 +4,7 @@ class UsersController < ApplicationController
   def index
     @users = User.all
 
+    # testing object and session caching via Dalli
     @session_time = session[:foo] ||= Time.now
     @cache_time = Rails.cache.fetch('current_time', :expires_in => 1.day) do
       Time.now
@@ -84,8 +85,5 @@ class UsersController < ApplicationController
       format.html { redirect_to(users_url) }
       format.xml  { head :ok }
     end
-  end
-  
-  def watch
   end
 end

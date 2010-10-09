@@ -1,7 +1,7 @@
 Foundation
 ===============
 
-Foundation is my take on a solid starting point for Rails3 applications being built today.  It is also an excellent science fiction series by Isaac Asimov.
+Foundation is our take on a solid starting point for Rails 3 applications being built today.  It is also an excellent science fiction series by Isaac Asimov.
 
 ![Foundation](http://www.nowakfilms.com/joomla15/images/stories/asimov_isaac_foundation_av.jpg)
 
@@ -12,11 +12,12 @@ Features
  * Functionality:
     - devise for authentication
     - admin_data for auto-scaffolding
-    - jQuery via Google's CDN
+    - jQuery 1.4.2 via Google's CDN
     - HTML5 boilerplate
     - Blueprint CSS framework
     - dalli for caching
     - mysql2 database adapter
+    - resque for background message processing
  * Testing
     - RSpec + Steak for feature testing (Cucumber is too complex IMO)
     - Capybara for full-stack acceptance testing
