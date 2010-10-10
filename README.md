@@ -8,7 +8,7 @@ Foundation is our take on a solid starting point for Rails 3 applications being 
 Features
 ===============
 
- * Core: Rails 3, Ruby 1.9.2, bundler 1.0.0
+ * Core: Rails 3, Ruby 1.9.2, bundler 1.0
  * Functionality:
     - devise for authentication
     - admin_data for auto-scaffolding
@@ -58,7 +58,7 @@ Installation
 Configuration
 -----------------
 
-You will need to edit config/database.yml, config/deploy* and several values in config/environment/*.rb.
+You will need to edit config/database.yml, config/deploy and several values in config/environment/production.rb.
 
 
 Thanks
