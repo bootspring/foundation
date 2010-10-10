@@ -1,5 +1,6 @@
 set :default_stage, "staging"
 require 'capistrano/ext/multistage'
+require 'bundler/capistrano'
 
 raise ArgumentError, "Please update config/deploy.rb with your app info"
 set :application, "yourapp"
