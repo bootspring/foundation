@@ -9,23 +9,7 @@
 </head>
 <body>
   <div id="container">
-    <div id="header">
-      <h1><a href="/">Foundation</a></h1>
-      <div id="user-navigation">
-        <ul class="wat-cf">
-          <li><a href="#"><%= t("web-app-theme.profile", :default => "Profile") %></a></li>
-          <li><a href="#"><%= t("web-app-theme.settings", :default => "Settings") %></a></li>
-          <% if user_signed_in? -%>
-          <li><%= link_to destroy_user_session_path, t("web-app-theme.logout", :default => "Logout") :class=>"logout" %></li>
-          <% else -%>
-          <li><%= link_to new_user_session, t("web-app-theme.login", :default => "Login") :class=>"login" %></li>
-          <% end -%>
-        </ul>
-      </div>
-      <div id="main-navigation">
-        <ul class="wat-cf"></ul>
-      </div>
-    </div>
+    <%= render :partial => 'shared/header' %>
     <div id="wrapper" class="wat-cf">
       <div class="flash">
         <% flash.each do |type, message| -%>
@@ -36,28 +20,13 @@
       </div>
       <div id="main">
         <%= yield %>
-        <div id="footer">
-          <div class="block">
-            <p>Copyright &copy; <%= Time.now.year %> Acme Co.</p>
-          </div>
-        </div>
       </div>
       <div id="sidebar">
         <%= yield :sidebar %>
       </div>
     </div>
+    <%= render :partial => 'shared/footer' %>
   </div>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-  <script>
-    var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']];
-    (function(d, t) {
-    var g = d.createElement(t),
-        s = d.getElementsByTagName(t)[0];
-    g.async = true;
-    g.src = '//www.google-analytics.com/ga.js';
-    s.parentNode.insertBefore(g, s);
-    })(document, 'script');
-  </script>
-  
+  <%= render :partial => 'shared/ga' %>
 </body>
 </html>

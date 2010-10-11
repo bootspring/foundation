@@ -1,9 +1,9 @@
 <div class="block">
   <div class="secondary-navigation">
     <ul class="wat-cf">
-      <li class="first"><%= link_to "#{t("web-app-theme.list", :default => "List")}", users_path  %></li>
-      <li><%= link_to "#{t("web-app-theme.new", :default => "New")}", new_user_path %></li>
-      <li class="active"><%= link_to "#{t("web-app-theme.show", :default => "Show")}", user_path %></li>
+      <li class="first"><%= link_to "#{t("web-app-theme.list", :default => "List")}", admin_users_path  %></li>
+      <li><%= link_to "#{t("web-app-theme.new", :default => "New")}", new_admin_user_path %></li>
+      <li class="active"><%= link_to "#{t("web-app-theme.show", :default => "Show")}", admin_user_path %></li>
     </ul>
   </div>          
   <div class="content">
@@ -64,8 +64,8 @@
           <%= @user.last_sign_in_ip %>
         </p>
       <div class="wat-cf">
-        <%= link_to image_tag("web-app-theme/icons/application_edit.png", :alt => "#{t("web-app-theme.edit", :default=> "Edit")}") + " " + t("web-app-theme.edit", :default=> "Edit"), edit_user_path(@user), :class => "button" %> 
-        <%= link_to image_tag("web-app-theme/icons/cross.png", :alt => "#{t("web-app-theme.delete", :default=> "Delete")}") + " " + t("web-app-theme.delete", :default => "Delete"), user_path(@user), :method => "delete", :class => "button", :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}" %>
+        <%= link_to image_tag("web-app-theme/icons/application_edit.png", :alt => "#{t("web-app-theme.edit", :default=> "Edit")}") + " " + t("web-app-theme.edit", :default=> "Edit"), edit_admin_user_path(@user), :class => "button" %> 
+        <%= link_to image_tag("web-app-theme/icons/cross.png", :alt => "#{t("web-app-theme.delete", :default=> "Delete")}") + " " + t("web-app-theme.delete", :default => "Delete"), admin_user_path(@user), :method => "delete", :class => "button", :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}" %>
       </div>      
     </div>
   </div>
