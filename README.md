@@ -14,7 +14,6 @@ Features
     - admin_data for auto-scaffolding
     - jQuery 1.4.2 via Google's CDN
     - HTML5 boilerplate
-    - Blueprint CSS framework
     - dalli for caching
     - mysql2 database adapter
     - resque for background message processing
