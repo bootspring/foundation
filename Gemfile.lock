@@ -195,7 +195,7 @@ DEPENDENCIES
   rack-bug!
   rails (~> 3.0.0)
   resque
-  rspec-rails (>= 2.0.0.rc)
+  rspec-rails
   steak (>= 1.0.0.beta.2)
   thin
   vcr

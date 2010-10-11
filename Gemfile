@@ -30,7 +30,7 @@ end
 
 group :test do
   gem 'factory_girl_rails'
-  gem "rspec-rails", ">= 2.0.0.rc"
+  gem "rspec-rails"
   gem "steak", '>= 1.0.0.beta.2'
   gem 'vcr'
   gem "capybara"
