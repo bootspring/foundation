@@ -1,6 +1,6 @@
 source :rubygems
 
-gem 'rails', ">~ 3.0.0"
+gem 'rails', "~> 3.0.0"
 
 # authenication
 gem 'devise'
@@ -23,6 +23,10 @@ gem 'admin_data'
 gem 'will_paginate', :git => 'git://github.com/mislav/will_paginate.git', :branch => 'rails3'
 # development profiling and debugging
 gem 'rack-bug', :git => 'git://github.com/brynary/rack-bug.git', :branch => 'rails3', :require => 'rack/bug'
+
+group :development, :test do
+  gem 'web-app-theme'
+end
 
 group :test do
   gem 'factory_girl_rails'

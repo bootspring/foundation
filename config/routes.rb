@@ -11,11 +11,11 @@ Foundation::Application.routes.draw do |map|
   # This route can be invoked with purchase_url(:id => product.id)
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
-  resources :users do
-    collection do
-      get :watch
-    end
+  namespace :admin do
+    resources :users
   end
+  
+  devise_for :users
 
   # Sample resource route with options:
   #   resources :products do

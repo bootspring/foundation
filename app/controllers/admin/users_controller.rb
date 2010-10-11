@@ -1,4 +1,5 @@
-class UsersController < ApplicationController
+class Admin::UsersController < AdminController
+
   # GET /users
   # GET /users.xml
   def index

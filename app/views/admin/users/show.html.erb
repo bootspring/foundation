@@ -1,0 +1,74 @@
+<div class="block">
+  <div class="secondary-navigation">
+    <ul class="wat-cf">
+      <li class="first"><%= link_to "#{t("web-app-theme.list", :default => "List")}", users_path  %></li>
+      <li><%= link_to "#{t("web-app-theme.new", :default => "New")}", new_user_path %></li>
+      <li class="active"><%= link_to "#{t("web-app-theme.show", :default => "Show")}", user_path %></li>
+    </ul>
+  </div>          
+  <div class="content">
+    <div class="inner">
+      
+        <p>
+          <b><%= t("activerecord.attributes.user.email", :default => t("activerecord.labels.email", :default => "Email")) %>:</b>
+          <%= @user.email %>
+        </p>
+
+        <p>
+          <b><%= t("activerecord.attributes.user.encrypted_password", :default => t("activerecord.labels.encrypted_password", :default => "Encrypted password")) %>:</b>
+          <%= @user.encrypted_password %>
+        </p>
+
+        <p>
+          <b><%= t("activerecord.attributes.user.password_salt", :default => t("activerecord.labels.password_salt", :default => "Password salt")) %>:</b>
+          <%= @user.password_salt %>
+        </p>
+
+        <p>
+          <b><%= t("activerecord.attributes.user.reset_password_token", :default => t("activerecord.labels.reset_password_token", :default => "Reset password token")) %>:</b>
+          <%= @user.reset_password_token %>
+        </p>
+
+        <p>
+          <b><%= t("activerecord.attributes.user.remember_token", :default => t("activerecord.labels.remember_token", :default => "Remember token")) %>:</b>
+          <%= @user.remember_token %>
+        </p>
+
+        <p>
+          <b><%= t("activerecord.attributes.user.remember_created_at", :default => t("activerecord.labels.remember_created_at", :default => "Remember created at")) %>:</b>
+          <%= @user.remember_created_at %>
+        </p>
+
+        <p>
+          <b><%= t("activerecord.attributes.user.sign_in_count", :default => t("activerecord.labels.sign_in_count", :default => "Sign in count")) %>:</b>
+          <%= @user.sign_in_count %>
+        </p>
+
+        <p>
+          <b><%= t("activerecord.attributes.user.current_sign_in_at", :default => t("activerecord.labels.current_sign_in_at", :default => "Current sign in at")) %>:</b>
+          <%= @user.current_sign_in_at %>
+        </p>
+
+        <p>
+          <b><%= t("activerecord.attributes.user.last_sign_in_at", :default => t("activerecord.labels.last_sign_in_at", :default => "Last sign in at")) %>:</b>
+          <%= @user.last_sign_in_at %>
+        </p>
+
+        <p>
+          <b><%= t("activerecord.attributes.user.current_sign_in_ip", :default => t("activerecord.labels.current_sign_in_ip", :default => "Current sign in ip")) %>:</b>
+          <%= @user.current_sign_in_ip %>
+        </p>
+
+        <p>
+          <b><%= t("activerecord.attributes.user.last_sign_in_ip", :default => t("activerecord.labels.last_sign_in_ip", :default => "Last sign in ip")) %>:</b>
+          <%= @user.last_sign_in_ip %>
+        </p>
+      <div class="wat-cf">
+        <%= link_to image_tag("web-app-theme/icons/application_edit.png", :alt => "#{t("web-app-theme.edit", :default=> "Edit")}") + " " + t("web-app-theme.edit", :default=> "Edit"), edit_user_path(@user), :class => "button" %> 
+        <%= link_to image_tag("web-app-theme/icons/cross.png", :alt => "#{t("web-app-theme.delete", :default=> "Delete")}") + " " + t("web-app-theme.delete", :default => "Delete"), user_path(@user), :method => "delete", :class => "button", :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}" %>
+      </div>      
+    </div>
+  </div>
+</div>
+
+<% content_for :sidebar, render(:partial => 'sidebar') -%>
