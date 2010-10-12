@@ -26,14 +26,14 @@ gem 'rack-bug', :git => 'git://github.com/brynary/rack-bug.git', :branch => 'rai
 
 group :development, :test do
   gem 'web-app-theme'
+  gem "steak", '>= 1.0.0.beta.2'
+  gem "rspec-rails"
+  gem "capybara"
 end
 
 group :test do
   gem 'factory_girl_rails'
-  gem "rspec-rails"
-  gem "steak", '>= 1.0.0.beta.2'
   gem 'vcr'
-  gem "capybara"
   gem "launchy"
   gem 'mocha'
   gem 'less'
