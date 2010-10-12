@@ -1,9 +1,9 @@
 module NavigationHelpers
-  # Put here the helper methods related to the paths of your applications
-  
+  # Put helper methods related to the paths in your application here.
+
   def homepage
     "/"
   end
 end
 
-Rspec.configuration.include(NavigationHelpers)
+RSpec.configuration.include NavigationHelpers, :type => :acceptance

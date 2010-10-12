@@ -3,6 +3,7 @@ require 'rspec/core/rake_task'
 namespace :spec do
   desc "Run the code examples in spec/acceptance"
   RSpec::Core::RakeTask.new(:acceptance => "db:test:prepare") do |t|
+    t.ruby_opts = "-w"
     t.pattern = "spec/acceptance/**/*_spec.rb"
   end
   
