@@ -1,1 +1,4 @@
-require 'resque'
+begin
+  require 'resque'
+rescue LoadError
+end

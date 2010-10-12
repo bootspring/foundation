@@ -43,7 +43,7 @@ class LoginTest < ActionController::IntegrationTest
     open_session do |sess|
       sess.extend(CustomActions)
       sess.post_via_redirect "/users/sign_in", :user => { :email => user.email, :password => 'password', :remember_me => '1' }
-      sess.assert !session.flash[:alert]
+      sess.assert !sess.flash[:alert]
       yield sess
     end
   end

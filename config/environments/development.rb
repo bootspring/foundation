@@ -22,8 +22,7 @@ Foundation::Application.configure do
   
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
   
-  config.middleware.use Rack::Bug,
-    :secret_key => "password"
+  config.middleware.use Rack::Bug, :secret_key => "password" if defined?(Rack::Bug)
 
   config.cache_store = :dalli_store, 'localhost:11211'
 
